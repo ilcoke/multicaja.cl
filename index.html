@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Multicaja.cl</title>
+<meta name="description" content="How to create a parallax scrolling effect using jQuery, HTML5 and CSS3">
+<meta name="author" content="Mohiuddin Parekh, Nettuts+">
+<!-- CSS Code -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- JS Code -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+
+	     $('a[href*=#]').click(function() {
+
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	         && location.hostname == this.hostname) {
+
+	             var $target = $(this.hash);
+
+	             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+	             if ($target.length) {
+
+	                 var targetOffset = $target.offset().top;
+
+	                 var targetOffset = targetOffset - 160;
+	                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+	                 
+	                 return false;
+
+	            }
+
+	       }
+
+	   });
+
+	});
+</script>
+</head>
+
+<body>
+	<div class="menu_top col-md-12">
+		<div class="container container_edit">
+			<div class="col-md-2 right">
+
+		  		<img src="images/iconos_svg/icon_comercios.svg" data-fallback-image="images/icon_comercios.png" role="presentation" title="Multicaja PayPal" alt="Multicaja comercios" />comercios</div>
+			<div class="col-md-2 right">
+				<img src="images/iconos_svg/icon_ecommerce.svg" data-fallback-image="images/top_3.png" role="presentation" title="Multicaja PayPal" alt="Multicaja comercios" class="especial" />
+				e-commerce</div>
+			<div class="col-md-2 right">
+				<img src="images/iconos_svg/icon_empresas.svg" data-fallback-image="images/top_3.png" role="presentation" title="Multicaja PayPal" alt="Multicaja empresas"/>empresas</div>
+			<div class="col-md-2 right">
+				<img src="images/iconos_svg/icon_personas.svg" data-fallback-image="images/top_3.png" role="presentation" title="Multicaja PayPal" alt="Multicaja personas"/>personas</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">
+			<img src="images/multicaja_logo.svg" data-fallback-image="images/multicaja_logo.png" role="presentation" title="Multicaja PayPal" alt="Multicaja PayPal">
+          </a>
+	    </div>
+
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav" id="navbar-nav">
+	        <li>
+	        	<a href="#home">Qu&eacute; es Multicaja</a>
+	        </li>
+	        <li>
+	        	<a href="#">Servicios</a>
+	        </li>
+	        <li>
+	        	<a href="#">Seguridad</a>
+	        </li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</nav>
+	<!-- Section #1 -->
+	<div class="general_container">
+		<section id="home" class="post_article">
+		  <article id="home2" data-speed="10" data-type="background">
+		  	<div class="container container_edit">
+		  		<h1>Descubre los servicios que tenemos para ti</h1>
+				<div class="btn_content1 col-md-12">
+					<div class="btn_content1a col-md-8">
+						<button class="btn_red left ">Servicios en los comercios</button>
+						<button class="btn_red right ">Servicios en la web</button>
+					</div>
+				</div>
+		  	</div>
+			
+		  </article>
+		  <div class="bajada_div">
+		  	<h2 class="hdos">Comienza ahora</h2>
+		  	<h3 class="htres">Prueba nuestros servicios sin costos</h3>
+		  	<a href="#about" class="down_arrow center m_top_35">
+		  		<img src="images/iconos_svg/icon_arrow_next.svg" data-fallback-image="images/multicaja_logo.png" role="presentation" title="Multicaja PayPal" alt="Multicaja PayPal">
+		  	</a>
+		  </div>
+		</section>
+		<!-- Section #2 -->
+		<section id="about" class="post_article">
+		  <article id="about2" data-speed="10" data-type="background">
+		  	<div class="container container_edit">
+			  	<div class="header_article">
+			  		<h2 class="hdos">Servicios en la web</h2>
+			  		<h3 class="htres">Todo a través de un sistema seguro y confiable</h3>
+			  	</div>
+			  	<div class="col-md-12 servicios_content">
+			  		<div class="col-md-3">
+			  			<img src="images/iconos_svg/icon_recargas.svg" data-fallback-image="images/img_1.png" role="presentation" title="Multicaja PayPal" alt="Recarga fácil"/>
+			  			<h4>Recarga fácil</h4>
+						<h5>Recarga por la web teléfonos y prepagos, gana  puntos con cada recarga.</h5>
+						<input type="button" value="Ir" class="litle_btn">
+			  		</div>
+			  		<div class="col-md-3">
+			  			<img src="images/iconos_svg/icon_pago_cuentas.svg" data-fallback-image="images/img_2.png" role="presentation" title="Multicaja PayPal" alt="Paga cuentas"/>
+						<h4>Paga cuentas</h4>
+						<h5>Paga todas tus cuentas por la web con trasferencia electrónica.</h5>
+						<input type="button" value="Ir" class="litle_btn">
+			  		</div>
+			  		<div class="col-md-3">
+			  			<img src="images/iconos_svg/icon_paypal.svg" data-fallback-image="images/img_3.png" role="presentation" title="Multicaja PayPal" alt="Multicaja PayPal"/>
+						<h4>Agrega dólares</h4>
+						<h5>Compra con PayPal en los principales sitios web del mundo sin tarjeta de crédito.</h5>
+						<input type="button" value="Ir" class="litle_btn">
+			  		</div>
+			  		<div class="col-md-3">
+			  			<img src="images/iconos_svg/icon_envia_dinero.svg" data-fallback-image="images/img_4.png" role="presentation" title="Multicaja PayPal" alt="Envía dinero"/>
+						<h4>Envía dinero</h4>
+						<h5>Envía lucas con Zuca a tus amigos, basta saber su celular.</h5>
+						<input type="button" value="Ir" class="litle_btn">
+			  		</div>
+			  	</div>
+			</div>
+		  </article>
+		  <div class="bajada_div">
+		  	<h2 class="hdos">Conectamos</h2>
+		  	<h3 class="htres">50 mil puntos - 200 servicios - 1,3 millones de personas</h3>
+		  	<button class="btn_red" style="margin-top: 36px;">Conoce m&aacute;s</button>
+		  	<a href="#servicios" class="down_arrow center m_top_35">
+		  		<img src="images/iconos_svg/icon_arrow_next.svg" data-fallback-image="images/multicaja_logo.png" role="presentation" title="Multicaja PayPal" alt="Multicaja PayPal">
+		  	</a>
+		  </div>
+		</section>
+		<!-- Section #3 -->
+		<section id="servicios" class="post_article">
+		  <article id="servicios2" data-speed="10" data-type="background">
+		  	<div class="container container_edit">
+			  	<div class="header_article">
+			  		<h2 class="hdos">Servicios en comercios</h2>
+			  		<h3 class="htres">Busca el más cercano</h3>
+			  	</div>
+			  	<div class="col-md-12 buscador_content">
+			  		<div class="buscador col-md-10">
+			  			<input type="text" class="buscador_input col-md-8">
+			  			<select name="" id="" class="buscador_select col-md-2">
+			  				<option value="0">Servicio</option>
+			  			</select>
+			  			<input type="button" value="Buscar" class="btn_buscador col-md-2">
+			  		</div>
+			  		<div class="bajada_buscador col-md-10">
+				  		<div class="desc_bajada col-md-2">
+				  			<img src="images/iconos_svg/icon_recargas.svg" data-fallback-image="images/img_1.png" role="presentation" title="Multicaja PayPal" alt="Recarga fácil"/>
+				  			<h5>Recargas <br>y pines</h5>
+				  		</div>
+				  		<div class="desc_bajada col-md-2">
+				  			<img src="images/iconos_svg/icon_pago_cuentas.svg" data-fallback-image="images/img_2.png" role="presentation" title="Multicaja PayPal" alt="Paga cuentas"/>
+				  			<h5>Pago de <br>cuentas</h5>
+				  		</div>
+				  		<div class="desc_bajada col-md-2">
+				  			<img src="images/iconos_svg/icon_giros.svg" data-fallback-image="images/img_5.png" role="presentation" title="Multicaja PayPal" alt="Giros Bancarios"/>
+				  			<h5>Giros <br>Bancarios</h5>
+				  		</div>
+				  		<div class="desc_bajada col-md-2">
+				  			<img src="images/iconos_svg/icon_depositos.svg" data-fallback-image="images/img_6.png" role="presentation" title="Multicaja PayPal" alt="Depósitos Bancarios"/>
+				  			<h5>Depósitos <br>Bancarios</h5>
+				  		</div>
+				  		<div class="desc_bajada col-md-2">
+				  			<img src="images/iconos_svg/icon_loto.svg" data-fallback-image="images/img_7.png" role="presentation" title="Multicaja PayPal" alt="Venta de Loto"/>
+				  			<h5>Venta de <br>Loto</h5>
+				  		</div>
+				  	</div>
+			  	</div>
+		  	</div>		
+		  </article>
+		  <div class="bajada_div">
+		  	<h2 class="hdos">¿Quieres ser un Comercio Multicaja?</h2>
+		  	<h3 class="htres">Ofrece pago de cuentas, recargas, servicios bancarios y mucho más…</h3>
+		  	<button class="btn_red" style="margin-top: 36px;">Ver m&aacute;s</button>
+		  	<!--<a href="#footer" class="down_arrow center m_top_35">
+		  		<img src="images/iconos_svg/icon_arrow_next.svg" data-fallback-image="images/multicaja_logo.png" role="presentation" title="Multicaja PayPal" alt="Multicaja PayPal">
+		  	</a>-->
+		  </div>
+		</section>
+		<!-- Section #4 -->
+		<section id="footer" class="post_article">
+		  <article id="footer2" data-speed="9999" data-type="background" data-name="esp">
+		  	<div class="header_article">
+		  		<h2 class="hdos">Conecta tu empresa</h2>
+		  		<h3 class="htres">Ofrece tus servicios a través de Multicaja</h3>
+		  		<button class="btn_red" style="margin-top: 36px;">Ver m&aacute;s</button>
+		  	</div>
+		  </article>
+		  <div class="grey_footer col-md-12">
+		  	<div class="container container_edit">
+			  	<div class="col-md-6 left">
+			  		<ul>
+			  			<li><a href="#"><img src="images/little_arrow_right.png" alt=""> Ayuda</a></li>
+			  			<li><a href="#"><img src="images/little_arrow_right.png" alt=""> Trabaja en Multicaja</a></li>
+			  		</ul>
+			  	</div>
+			  	<div class="col-md-6 right">
+			  		<span class="right">Copyright 2015 © Multicaja S.A.</span>
+			  	</div>
+			</div>
+		  </div>
+		</section>
+	</div>
+</body>
+
+</html>
