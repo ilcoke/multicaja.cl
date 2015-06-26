@@ -1,0 +1,6 @@
+.input_empre_serv .empresa_serv_content .select_content{
+	background: #fff;
+}
+.input_empre_serv .empresa_serv_content .select_content select{
+	padding-right: 0;
+}
